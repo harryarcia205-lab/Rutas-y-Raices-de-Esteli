@@ -1,0 +1,329 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f1ea;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+header {
+    background: #1f4d3b;
+    color: white;
+    padding: 25px 8%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.introduccion {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.introduccion h2 {
+    font-size: 30px;
+    color: #1f4d3b;
+    margin-bottom: 10px;
+}
+
+.introduccion p {
+    color: #555;
+}
+
+/* =========================
+   MAPA
+========================= */
+
+.mapa-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.mapa-container h2 {
+    color: #1f4d3b;
+    margin-bottom: 15px;
+}
+
+#mapa {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    background: #ddd;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+
+.lugares {
+    margin-top: 45px;
+}
+
+.lugares h2 {
+    text-align: center;
+    color: #1f4d3b;
+    margin-bottom: 25px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tarjeta-contenido {
+    padding: 20px;
+}
+
+.tarjeta h3 {
+    color: #1f4d3b;
+    margin-bottom: 8px;
+}
+
+.tarjeta p {
+    color: #555;
+}
+
+/* =========================
+   BOTÓN
+========================= */
+
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #1f4d3b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.boton:hover {
+    background: #163a2d;
+}
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer {
+    margin-top: 50px;
+    padding: 25px;
+    background: #1f4d3b;
+    color: white;
+    text-align: center;
+}
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    #mapa {
+        height: 400px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    /* ==================================
+MEJORAS VISUALES DE LAS TARJETAS
+================================== */
+
+.tarjeta {
+    border: 1px solid #e5e5e5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-contenido {
+    padding: 22px;
+}
+
+.tarjeta h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.boton {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Adaptación para celulares */
+
+@media (max-width: 700px) {
+    .tarjeta img {
+        height: 210px;
+    }
+
+    .tarjeta h3 {
+        font-size: 19px;
+    }
+}
+}
+/* ==================================
+   SECCIÓN CULTURAL
+================================== */
+
+.informacion-cultural {
+    margin-top: 45px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.informacion-cultural h2 {
+    text-align: center;
+    color: #1f4d3b;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitulo-cultural {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.panel-cultural {
+    padding: 20px;
+    margin-top: 15px;
+    background: #f4f1ea;
+    border-left: 5px solid #1f4d3b;
+    border-radius: 8px;
+}
+
+.panel-cultural h3 {
+    color: #1f4d3b;
+    margin-bottom: 8px;
+}
+
+.panel-cultural p {
+    color: #444;
+    line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+    .informacion-cultural {
+        padding: 18px;
+    }
+
+    .informacion-cultural h2 {
+        font-size: 23px;
+    }
+
+    .panel-cultural {
+        padding: 15px;
+    }
+}
+
+/* CONTROLES DEL MAPA */
+
+.controles-mapa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.controles-mapa .boton {
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.controles-mapa .boton:hover {
+    background: #163a2d;
+}
+
+@media (max-width: 600px) {
+    .controles-mapa {
+        flex-direction: column;
+    }
+
+    .controles-mapa .boton {
+        text-align: center;
+    }
+}

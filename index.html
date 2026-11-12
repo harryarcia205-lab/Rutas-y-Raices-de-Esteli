@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raíces y Rutas de Estelí</title>
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Raíces y Rutas de Estelí</h1>
+
+        <p>
+            Descubre la cultura, el arte y los murales de nuestra ciudad.
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <section class="introduccion">
+
+            <h2>Mapa Cultural de Estelí</h2>
+
+            <p>
+                Explora los principales puntos culturales de Estelí
+                mediante nuestro mapa interactivo.
+            </p>
+
+        </section>
+
+
+        <section class="mapa-container">
+
+            <h2>🗺️ Mapa interactivo</h2>
+
+        <div class="controles-mapa">
+    <button id="mostrar-todos" class="boton">
+        🗺️ Mostrar todos los lugares
+    </button>
+
+    <a
+        class="boton"
+        href="https://www.google.com/maps/dir/?api=1&origin=13.09346,-86.35495&destination=13.0908,-86.3570"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        🚶 Consultar recorrido
+    </a>
+</div>
+
+<div id="mapa"></div>
+
+        </section>
+
+
+    <section class="lugares">
+    <h2>📍 Lugares del recorrido cultural</h2>
+
+    <div class="tarjetas">
+
+        <!-- PARQUE CENTRAL -->
+        <div class="tarjeta">
+            <img
+                src="images/parque.jpg"
+                alt="Parque Central 19 de Julio de Estelí"
+            >
+
+            <div class="tarjeta-contenido">
+                <h3>🌳 Parque Central 19 de Julio</h3>
+
+                <p>
+                    Punto de partida para descubrir la riqueza
+                    cultural, histórica y artística de Estelí.
+                </p>
+
+                <a href="#mapa" class="boton">Ver ubicación</a>
+            </div>
+        </div>
+
+        <!-- CENTRO CULTURAL FELIPE URRUTIA -->
+        <div class="tarjeta">
+            <img
+                src="images/felipe-urrutia.jpg"
+                alt="Centro Cultural Felipe Urrutia"
+            >
+
+            <div class="tarjeta-contenido">
+                <h3>🎨 Centro Cultural Felipe Urrutia</h3>
+
+                <p>
+                    Un espacio cultural que destaca por sus
+                    expresiones artísticas y sus murales.
+                </p>
+
+                <a href="#mapa" class="boton">Ver ubicación</a>
+            </div>
+        </div>
+
+        <!-- CASA DE CULTURA LEONEL RUGAMA -->
+        <div class="tarjeta">
+            <img
+                src="images/leonel-rugama.jpg"
+                alt="Casa de Cultura Leonel Rugama"
+            >
+
+            <div class="tarjeta-contenido">
+                <h3>🎭 Casa de Cultura Leonel Rugama</h3>
+
+                <p>
+                    Espacio dedicado a la formación artística
+                    y la promoción de la cultura.
+                </p>
+
+                <a href="#mapa" class="boton">Ver ubicación</a>
+            </div>
+        </div>
+
+        <!-- CASA DE CULTURA CIRO MOLINA -->
+        <div class="tarjeta">
+            <img
+                src="images/ciro-molina.jpg"
+                alt="Casa de Cultura Ciro Molina"
+            >
+
+            <div class="tarjeta-contenido">
+                <h3>🖌️ Casa de Cultura Ciro Molina</h3>
+
+                <p>
+                    Un espacio dedicado a las artes plásticas,
+                    el muralismo y la formación artística.
+                </p>
+
+                <a href="#mapa" class="boton">Ver ubicación</a>
+            </div>
+        </div>
+
+    </div>
+</section><section class="informacion-cultural" id="informacion-cultural">
+
+    <h2>🎨 Descubre nuestra cultura</h2>
+
+    <p class="subtitulo-cultural">
+        Conoce los espacios que conservan y promueven
+        la identidad artística de Estelí.
+    </p>
+
+    <div class="panel-cultural">
+
+        <h3>🌳 Parque Central 19 de Julio</h3>
+
+        <p>
+            Nuestro punto de partida. Desde aquí comienza
+            el recorrido para conocer espacios culturales,
+            expresiones artísticas y parte de la identidad
+            de nuestra ciudad.
+        </p>
+
+    </div>
+
+    <div class="panel-cultural">
+
+        <h3>🎨 Centro Cultural Felipe Urrutia</h3>
+
+        <p>
+            Un espacio que promueve la cultura y destaca
+            por sus expresiones artísticas y murales
+            representativos de la vida e identidad esteliana.
+        </p>
+
+    </div>
+
+    <div class="panel-cultural">
+
+        <h3>🎭 Casa de Cultura Leonel Rugama</h3>
+
+        <p>
+            Espacio dedicado a la formación artística
+            y a la promoción de actividades culturales,
+            como la danza, la música y las artes visuales.
+        </p>
+
+    </div>
+
+    <div class="panel-cultural">
+
+        <h3>🖌️ Casa de Cultura Ciro Molina</h3>
+
+        <p>
+            Espacio dedicado a las artes plásticas,
+            el muralismo y el aprendizaje de distintas
+            técnicas artísticas.
+        </p>
+
+    </div>
+
+</section>
+
+
+                <div class="tarjeta">
+
+                    <div class="tarjeta-contenido">
+
+                        <h3>🎭 Casa de Cultura Leonel Rugama</h3>
+
+                        <p>
+                            Espacio dedicado a diferentes expresiones
+                            culturales y artísticas.
+                        </p>
+
+                        <a href="#" class="boton">
+                            Ver ubicación
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <div class="tarjeta-contenido">
+
+                        <h3>🖌️ Casa de Cultura Ciro Molina</h3>
+
+                        <p>
+                            Espacio dedicado a las artes plásticas,
+                            muralismo y formación artística.
+                        </p>
+
+                        <a href="#" class="boton">
+                            Ver ubicación
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Raíces y Rutas de Estelí © 2026
+        </p>
+
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
